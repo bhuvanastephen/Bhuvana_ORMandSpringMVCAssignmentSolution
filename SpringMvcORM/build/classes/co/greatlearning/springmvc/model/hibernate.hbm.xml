@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="co.greatlearning.springmvc.entity.Customer" table="CUSTOMER">
+		<id name="id" column="ID">
+			<generator class="increment"></generator>
+		</id>
+		<property name="firstName" column="FIRSTNAME"></property>
+		<property name="lastName" column="LASTNAME"></property>
+		<property name="email" column="EMAIL"></property>
+	</class>
+</hibernate-mapping>
