@@ -80,7 +80,8 @@ tr{
 						<td>${customer.email}</td>
 						<td><a
 							href="http://localhost:8080/SpringMvcORM/updatePage/${customer.id}"><button>Update</button></a> <a
-							href="http://localhost:8080/SpringMvcORM/deleteCustomer/${customer.id}"><button>Delete</button></a></td>
+							href="http://localhost:8080/SpringMvcORM/deleteCustomer/${customer.id}" onclick="if (!(confirm('Are you sure you want to delete this Student?'))) return false"><button>Delete</button></a>
+						</td>
 					</tr>
 				</tbody>
 			</c:forEach>
